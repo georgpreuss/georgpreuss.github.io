@@ -6,7 +6,7 @@ import './styles/main.scss'
 
 const App = () => {
 
-  return <h1 className='title'>Hello World</h1>
+  return <h1 className='title'>Hola mundo</h1>
 
 }
 
