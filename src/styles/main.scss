@@ -1,7 +1,14 @@
+// @import "/node_modules/bulma/sass/utilities/_all.sass";
+// @import "/node_modules/bulma/sass/base/_all.sass";
+
 html {
   max-height: 100vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
+}
+
+svg {
+  fill: #4a4a4a;
 }
 
 .fractal, .contact, .skills {
@@ -28,6 +35,14 @@ html {
 
 .skills {
   background-image: url('../images/skills.png');
+}
+
+.project-skills i {
+  font-size: 50px;
+}
+
+.tile a {
+  padding: 0 10px;
 }
 
 #skills .column {

@@ -122,8 +122,8 @@ const Hero = () => {
           <h1 className="title">
             CONTACT
           </h1>
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/georgpreuss"><h2 className="subtitle"><i className="devicon-github-plain"></i>github.com/georgpreuss</h2></a>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/georgpreuss/"><h2 className="subtitle"><i className="fab fa-linkedin"></i>linkedin.com/in/georgpreuss</h2></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/georgpreuss"><h2 className="subtitle"><i className="devicon-github-plain"></i> github.com/georgpreuss</h2></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/georgpreuss/"><h2 className="subtitle"><i className="fab fa-linkedin"></i> linkedin.com/in/georgpreuss</h2></a>
         </div>
       </div>
     </section>
