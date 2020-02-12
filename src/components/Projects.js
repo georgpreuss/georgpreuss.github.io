@@ -3,17 +3,17 @@ import React, { useState } from 'react'
 const allProjects = [
   {
     projectName: 'TripBit',
-    deployedLink: 'www.scratchmap.herokuapp.com',
-    githubLink: 'www.github.com/georgpreuss/tripbit',
-    format: 'A Ga group project built in 1 week',
+    deployedLink: 'https://scratchmap.herokuapp.com',
+    githubLink: 'https://github.com/georgpreuss/project-4',
+    format: 'A GA group project built in 1 week',
     img: '',
     technologiesUsed: ['devicon-python-plain', 'devicon-react-original', 'devicon-django-plain'],
-    description: 'This is a mobile-friendly application built primarily with Django, PostgreSQL and React. Inspired by paper-based ‘scratch maps’, users collect badges and experience points based on the number of cities and countries they visit. Users can also create and join groups and find out how their travels compare.'
+    description: 'This is a mobile-friendly application built primarily with Django, PostgreSQL and React. Inspired by paper-based ‘scratch maps’, users collect badges and experience points based on the number of cities and countries they visit. Users can also create and join groups and where they can see who has traveled the most.'
   },
   {
     projectName: 'Gift List',
-    deployedLink: 'www.giftlist.herokuapp.com',
-    githubLink: 'www.github.com/georgpreuss/gift-list',
+    deployedLink: 'https://giftlist.herokuapp.com',
+    githubLink: 'https://github.com/georgpreuss/gift-list',
     format: 'A GA group project built in 1 week',
     img: '',
     technologiesUsed: ['devicon-react-original', 'devicon-nodejs-plain', 'devicon-mongodb-plain'],
@@ -21,8 +21,8 @@ const allProjects = [
   },
   {
     projectName: 'Fetch',
-    deployedLink: 'www.georgpreuss.com/project-fetch',
-    githubLink: 'www.github.com/georgpreuss/project-fetch',
+    deployedLink: 'https://georgpreuss.com/project-fetch',
+    githubLink: 'https://github.com/georgpreuss/project-fetch',
     format: 'A GA pair project built in 2 days',
     img: '',
     technologiesUsed: ['devicon-react-original', 'devicon-nodejs-plain', 'devicon-webpack-plain'],
@@ -30,8 +30,8 @@ const allProjects = [
   },
   {
     projectName: 'CrimeMapper',
-    deployedLink: 'www.georgpreuss.com/project-x',
-    githubLink: 'www.github.com/georgpreuss/project-x',
+    deployedLink: 'https://georgpreuss.com/project-x',
+    githubLink: 'https://github.com/georgpreuss/project-x',
     format: 'A GA solo project built over a weekend',
     img: '',
     technologiesUsed: ['devicon-react-original', 'devicon-nodejs-plain'],
@@ -39,8 +39,8 @@ const allProjects = [
   },
   {
     projectName: 'Operation Steel Sabre',
-    deployedLink: 'www.georgpreuss.com/project-1',
-    githubLink: 'www.github.com/georgpreuss/project-1',
+    deployedLink: 'https://georgpreuss.com/project-1',
+    githubLink: 'https://github.com/georgpreuss/project-1',
     format: 'A GA solo project built in a week',
     img: '',
     technologiesUsed: ['devicon-javascript-plain', 'devicon-html5-plain', 'devicon-css3-plain'],
@@ -63,12 +63,12 @@ const Projects = () => {
 
   const [projectContent, setProjectContent] = useState({
     projectName: 'TripBit',
-    deployedLink: 'www.scratchmap.herokuapp.com',
-    githubLink: 'www.github.com/georgpreuss/tripbit',
+    deployedLink: 'https://scratchmap.herokuapp.com',
+    githubLink: 'https://github.com/georgpreuss/project-4',
     format: 'A GA group project built in 1 week',
     img: '',
     technologiesUsed: ['devicon-react-original', 'devicon-python-plain', 'devicon-django-plain'],
-    description: 'This is a mobile-friendly application built primarily with Django, PostgreSQL and React. Inspired by paper-based ‘scratch maps’, users collect badges and experience points based on the number of cities and countries they visit. Users can also create and join groups and find out how their travels compare.'
+    description: 'This is a mobile-friendly application built primarily with Django, PostgreSQL and React. Inspired by paper-based ‘scratch maps’, users collect badges and experience points based on the number of cities and countries they visit. Users can also create and join groups and where they can see who has traveled the most.'
   })
 
   const selectProject = (e) => {
