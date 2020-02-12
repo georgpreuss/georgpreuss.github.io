@@ -1,31 +1,46 @@
-// add styles
-.my-hero {
-  // background-image: url('https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462434_960_720.jpg');
-  background-image: url('https://pixabay.com/get/54e4d3414e51a814f6d1867dda6d49214b6ac3e45656784f702d72d095/background-2462434_1920.jpg');
+html {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.fractal, .contact, .skills {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  background-position: center;
+  // z-index: 1;
+  // -webkit-filter: opacity(80%);
+  // -moz-filter: opacity(80%);
+  // -o-filter: opacity(80%);
+  // -ms-filter: opacity(80%);
+  // filter: opacity(80%);
+  
+}
+
+.fractal {
+  background-image: url('../images/fractal.jpg');
+}
+
+.contact {
+  background-image: url('../images/contact.png');
+}
+
+.skills {
+  background-image: url('../images/skills.png');
+}
+
+#skills .column {
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  .my-title {
-    text-align: center;
-    text-transform: uppercase;
+  justify-content: center;
+  i {
+    font-size: 50px;
   }
 }
 
-.hero {
-  background-image: url('https://pixabay.com/get/54e4d3414e51a814f6d1867dda6d49214b6ac3e45656784f702d72d095/background-2462434_1920.jpg');
-  // background-image: url('https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462434_960_720.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  .hero-foot {
-    position: -webkit-sticky; 
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-  
+#about p {
+  text-align: justify;
+  text-justify: inter-word;
 }
