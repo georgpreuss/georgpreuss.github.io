@@ -6,7 +6,7 @@ const allProjects = [
     deployedLink: 'https://scratchmap.herokuapp.com',
     githubLink: 'https://github.com/georgpreuss/project-4',
     format: 'A GA group project built in 1 week',
-    img: '',
+    images: ['./images/project5_1.png', './images/project5_2.png'],
     technologiesUsed: ['devicon-python-plain', 'devicon-react-original', 'devicon-django-plain'],
     description: 'This is a mobile-friendly application built primarily with Django, PostgreSQL and React. Inspired by paper-based ‘scratch maps’, users collect badges and experience points based on the number of cities and countries they visit. Users can also create and join groups and where they can see who has traveled the most.'
   },
@@ -15,7 +15,7 @@ const allProjects = [
     deployedLink: 'https://giftlist.herokuapp.com',
     githubLink: 'https://github.com/georgpreuss/gift-list',
     format: 'A GA group project built in 1 week',
-    img: '',
+    images: ['./images/project4_1.gif'],
     technologiesUsed: ['devicon-react-original', 'devicon-nodejs-plain', 'devicon-mongodb-plain'],
     description: 'This is a fullstack application based on the MERN stack. Users can create and edit wish lists. Based on selected interests users are given recommendations of products available on etsy. These as well as manual entries can be added to a list.'
   },
@@ -24,7 +24,7 @@ const allProjects = [
     deployedLink: 'https://georgpreuss.com/project-fetch',
     githubLink: 'https://github.com/georgpreuss/project-fetch',
     format: 'A GA pair project built in 2 days',
-    img: '',
+    images: ['./images/project3_1.png', './images/project3_2.png'],
     technologiesUsed: ['devicon-react-original', 'devicon-nodejs-plain', 'devicon-webpack-plain'],
     description: 'This is a frontend application built with React where information is pulled from a publicly available API. Users can browse dogs and find out basic information about each dog, as well as add dogs to a favourites collection.'
   },
@@ -33,7 +33,7 @@ const allProjects = [
     deployedLink: 'https://georgpreuss.com/project-x',
     githubLink: 'https://github.com/georgpreuss/project-x',
     format: 'A GA solo project built over a weekend',
-    img: '',
+    images: ['./images/project2_1.png', './images/project2_2.png'],
     technologiesUsed: ['devicon-react-original', 'devicon-nodejs-plain'],
     description: 'As the name suggests, this is an application that puts crime on a map. Based on Mapbox and a police API, users can interact with a map and draw polygons onto it to reveal the types of crimes in that area.'
   },
@@ -42,7 +42,7 @@ const allProjects = [
     deployedLink: 'https://georgpreuss.com/project-1',
     githubLink: 'https://github.com/georgpreuss/project-1',
     format: 'A GA solo project built in a week',
-    img: '',
+    images: ['./images/project1_1.png', './images/project1_2.png'],
     technologiesUsed: ['devicon-javascript-plain', 'devicon-html5-plain', 'devicon-css3-plain'],
     description: 'Based on the classic Battleship game, users can play against a computer opponent. After carefully planning your armada\'s location players can start firing torpedos at the enemy. Whoever manages to sink the opponent\'s fleet first wins.'
   },
@@ -51,7 +51,7 @@ const allProjects = [
     deployedLink: '',
     githubLink: '',
     format: 'One of hopefully many more projects to come',
-    img: '',
+    images: [],
     technologiesUsed: ['devicon-react-original', 'devicon-nodejs-plain'],
     description: 'I am currently working on a project that will combine my passion for climbing with my creativity. The plan is to build a piece of arduino hardware that will log and send data via BLE. In order to keep expanding my programming knowledge, I will build a React Native app for it.'
   }
@@ -66,7 +66,7 @@ const Projects = () => {
     deployedLink: 'https://scratchmap.herokuapp.com',
     githubLink: 'https://github.com/georgpreuss/project-4',
     format: 'A GA group project built in 1 week',
-    img: '',
+    images: ['./images/project5_1.png', './images/project5_2.png'],
     technologiesUsed: ['devicon-react-original', 'devicon-python-plain', 'devicon-django-plain'],
     description: 'This is a mobile-friendly application built primarily with Django, PostgreSQL and React. Inspired by paper-based ‘scratch maps’, users collect badges and experience points based on the number of cities and countries they visit. Users can also create and join groups and where they can see who has traveled the most.'
   })
@@ -98,6 +98,7 @@ const Projects = () => {
             </article>
             <article className="tile is-child notification is-dark">
               <p className="subtitle">{projectContent.format}</p>
+              <p>Links to application and repo: </p>
               <a target="_blank" rel="noopener noreferrer" href={projectContent.deployedLink}><i className="fas fa-link"></i></a>
               <a target="_blank" rel="noopener noreferrer" href={projectContent.githubLink}><i className="fab fa-github"></i></a>
             </article>
@@ -105,9 +106,6 @@ const Projects = () => {
           <div className="tile is-parent">
             <article className="tile is-child notification is-dark">
               <p className="subtitle">{projectContent.description}</p>
-              {/* <figure className="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/640x480.png" />
-              </figure> */}
             </article>
           </div>
         </div>
@@ -124,12 +122,11 @@ const Projects = () => {
         </div>
       </div>
       <div className="tile is-parent">
-        <article className="tile is-child notification is-dark">
+        <article className="tile is-child notification is-dark screenshots">
           <div className="content">
-            <p className="title">INSERT IMG</p>
-            {/* <p className="subtitle">{projectContent.description}</p> */}
-            <div className="content">
-            </div>
+            {projectContent.images.map((img, i) => {
+              return <img src={img} key={i}/>
+            })}
           </div>
         </article>
       </div>

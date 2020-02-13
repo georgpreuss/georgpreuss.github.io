@@ -45,9 +45,17 @@ svg {
   padding: 0 10px;
 }
 
+.screenshots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
 #skills .column {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   i {
